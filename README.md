@@ -167,8 +167,6 @@ curl -X POST http://localhost:3000/api/exam/submit \
 \`\`\`
 
 ## Project Structure
-
-\`\`\`
 ├── app/
 │   ├── api/
 │   │   ├── auth/
@@ -191,7 +189,6 @@ curl -X POST http://localhost:3000/api/exam/submit \
 │   └── User.ts
 ├── components/ui/
 └── README.md
-\`\`\`
 
 ## Key Features Implementation
 
