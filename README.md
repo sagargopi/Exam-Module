@@ -55,28 +55,29 @@ A full-stack exam-taking application built with Next.js and MongoDB, featuring J
 ## 📁 Project Structure
 
 ```
-app/
-├── api/
+├── app/
+│   ├── api/
+│   │   ├── auth/
+│   │   │   ├── login/route.ts
+│   │   │   ├── register/route.ts
+│   │   │   └── verify/route.ts
+│   │   └── exam/
+│   │       ├── questions/route.ts
+│   │       └── submit/route.ts
 │   ├── auth/
-│   │   ├── login/route.ts
-│   │   ├── register/route.ts
-│   │   └── verify/route.ts
-│   └── exam/
-│       ├── questions/route.ts
-│       └── submit/route.ts
-├── auth/
-│   ├── login/page.tsx
-│   └── register/page.tsx
-├── dashboard/page.tsx
-├── exam/page.tsx
-├── results/page.tsx
-└── page.tsx
-lib/
-└── mongodb.ts
-models/
-└── User.ts
-components/ui/
-```
+│   │   ├── login/page.tsx
+│   │   └── register/page.tsx
+│   ├── dashboard/page.tsx
+│   ├── exam/page.tsx
+│   ├── results/page.tsx
+│   └── page.tsx
+├── lib/
+│   └── mongodb.ts
+├── models/
+│   └── User.ts
+├── components/ui/
+└── README.md
+
 
 ## 🔑 Key Features
 
