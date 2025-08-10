@@ -224,7 +224,7 @@ curl -X POST http://localhost:3000/api/exam/submit \
 \`\`\`
 
 ### Project Structure
-```text
+
 ├── app/
 │   ├── api/
 │   │   ├── auth/
