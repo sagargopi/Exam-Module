@@ -52,6 +52,58 @@ A full-stack exam-taking application built with Next.js and MongoDB, featuring J
 - MongoDB Atlas account or local MongoDB instance
 - npm or yarn package manager
 
+## 📁 Project Structure
+
+```
+app/
+├── api/
+│   ├── auth/
+│   │   ├── login/route.ts
+│   │   ├── register/route.ts
+│   │   └── verify/route.ts
+│   └── exam/
+│       ├── questions/route.ts
+│       └── submit/route.ts
+├── auth/
+│   ├── login/page.tsx
+│   └── register/page.tsx
+├── dashboard/page.tsx
+├── exam/page.tsx
+├── results/page.tsx
+└── page.tsx
+lib/
+└── mongodb.ts
+models/
+└── User.ts
+components/ui/
+```
+
+## 🔑 Key Features
+
+| Feature | Implementation Details |
+|---------|----------------------|
+| **MongoDB Integration** | Mongoose ODM with connection pooling, error handling, and user persistence |
+| **JWT Authentication** | Secure token-based auth with bcrypt (12 rounds) and protected routes |
+| **Exam System** | 20 technical questions, 30-minute timer, navigation, and progress tracking |
+| **Results** | Immediate score calculation with detailed question breakdown |
+
+## 🔒 Security Features
+
+- 🔐 Password hashing with bcrypt (12 rounds)
+- ⏱️ JWT token expiration (24 hours)
+- 🛡️ Protected API routes with token verification
+- ✅ Input validation and sanitization
+- 🛡️ MongoDB injection prevention
+
+## 🚀 Deployment (Vercel)
+
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Set environment variables:
+   - `MONGODB_URI`
+   - `JWT_SECRET`
+4. Deploy!
+
 ### Installation
 
 1. Clone the repository:
@@ -68,9 +120,8 @@ npm install
 3. Set up environment variables:
 Create a `.env.local` file in the root directory:
 \`\`\`env
-MONGODB_URI=mongodb://localhost:27017/leadmasters-exam
-# OR for MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/leadmasters-exam
+
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/leadmasters-exam
 
 JWT_SECRET=your-custom-jwt-secret-key
 \`\`\`
@@ -172,9 +223,8 @@ curl -X POST http://localhost:3000/api/exam/submit \
   -d '{"answers":{"0":1,"1":2},"questions":[...]}'
 \`\`\`
 
-## Project Structure
-
-\`\`\`
+### Project Structure
+```text
 ├── app/
 │   ├── api/
 │   │   ├── auth/
@@ -197,7 +247,7 @@ curl -X POST http://localhost:3000/api/exam/submit \
 │   └── User.ts
 ├── components/ui/
 └── README.md
-\`\`\`
+
 
 ## Key Features Implementation
 
@@ -233,16 +283,6 @@ curl -X POST http://localhost:3000/api/exam/submit \
 - Protected API routes with token verification
 - Input validation and sanitization
 - MongoDB injection prevention
-
-## Environment Variables
-
-\`\`\`env
-# Required
-MONGODB_URI=mongodb://localhost:27017/leadmasters-exam
-
-# Optional (has default)
-JWT_SECRET=your-custom-jwt-secret-key
-\`\`\`
 
 ## Deployment
 
