@@ -2,7 +2,6 @@
 
 A full-stack exam-taking application built with Next.js and MongoDB, featuring JWT authentication, timed exams, and result display.
 
-![Exam App Preview](public/exam-preview.png) <!-- Add a preview image if available -->
 
 ## ✨ Features
 
