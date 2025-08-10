@@ -63,9 +63,8 @@ npm install
 3. Set up environment variables:
 Create a `.env.local` file in the root directory:
 \`\`\`env
-MONGODB_URI=mongodb://localhost:27017/leadmasters-exam
-# OR for MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/leadmasters-exam
+
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/leadmasters-exam
 
 JWT_SECRET=your-custom-jwt-secret-key
 \`\`\`
@@ -228,16 +227,6 @@ curl -X POST http://localhost:3000/api/exam/submit \
 - Protected API routes with token verification
 - Input validation and sanitization
 - MongoDB injection prevention
-
-## Environment Variables
-
-\`\`\`env
-# Required
-MONGODB_URI=mongodb://localhost:27017/leadmasters-exam
-
-# Optional (has default)
-JWT_SECRET=your-custom-jwt-secret-key
-\`\`\`
 
 ## Deployment
 
