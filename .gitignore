@@ -43,7 +43,7 @@ Thumbs.db
 .vercel
 
 # TypeScript
-*.tsbuildinfo
+*.tsbuild.info
 next-env.d.ts
 
 # Local development
@@ -63,8 +63,23 @@ next-env.d.ts
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
+# Yarn/pnpm
 .yarn-integrity
+pnpm-lock.yaml
 
-# dotenv environment variables file
+# Local environment files
 .env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
