@@ -190,7 +190,7 @@ curl -X GET http://localhost:3000/api/exam/questions \
    - `JWT_SECRET`
 4. Deploy automatically
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with Next.js and MongoDB
 - Styled with Tailwind CSS and shadcn/ui
