@@ -1,50 +1,55 @@
-# LeadMasters AI - Exam Taking Application
+# 🎓 Exam Taking Application
 
 A full-stack exam-taking application built with Next.js and MongoDB, featuring JWT authentication, timed exams, and result display.
 
-## Features
+![Exam App Preview](public/exam-preview.png) <!-- Add a preview image if available -->
 
-- **User Authentication**: JWT-based registration and login system
-- **MongoDB Integration**: Persistent user storage
-- **Secure Exam Interface**: Randomized questions with navigation controls
-- **Timer Functionality**: 30-minute countdown with auto-submit capability
-- **Real-time Progress**: Question navigation and progress tracking
-- **Result Display**: Score calculation and question-wise breakdown
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
+## ✨ Features
 
-## Technology Stack
+- **🔐 User Authentication**: Secure JWT-based registration and login system
+- **💾 MongoDB Integration**: Persistent user storage with Mongoose ODM
+- **📝 Secure Exam Interface**: Randomized questions with intuitive navigation controls
+- **⏱️ Timer Functionality**: 30-minute countdown with auto-submit capability
+- **📊 Real-time Progress**: Visual question navigation and progress tracking
+- **🏆 Result Display**: Instant score calculation with question-wise breakdown
+- **📱 Responsive Design**: Seamless experience across desktop and mobile devices
+
+## 🛠️ Technology Stack
 
 - **Frontend**: React.js (Next.js 14)
 - **Backend**: Node.js (Next.js API Routes)
 - **Database**: MongoDB with Mongoose ODM
 - **Authentication**: JWT (JSON Web Tokens)
 - **Styling**: Tailwind CSS with shadcn/ui components
+- **State Management**: React Context API
+- **Form Handling**: React Hook Form
+- **Icons**: Lucide React
 
-## Project Scope (As Per Requirements)
+## 📋 Project Scope
 
-This application implements exactly what was specified in the project brief:
+### ✅ Implemented Features
 
-✅ **Required Features:**
 - User registration and login with JWT authentication
-- "Start Exam" interface that fetches randomized questions from backend
-- Display of MCQs with options
-- Navigation through questions (Next/Previous functionality)
-- Countdown timer (30 minutes) with auto-submit capability
-- Submit Exam functionality that calculates score
-- Result display page
+- Secure exam interface with randomized questions
+- Multiple choice questions with single-select answers
+- Intuitive question navigation (Previous/Next)
+- 30-minute countdown timer with auto-submit
+- Exam submission with score calculation
+- Detailed result display with question review
 
-❌ **Excluded Features (As Requested):**
-- Admin panel
-- Question bank management or upload system
-- Analytics or reports dashboard
-- Webcam proctoring or surveillance features
+### ❌ Excluded Features
 
-## Getting Started
+- Admin dashboard
+- Question bank management
+- Analytics dashboard
+- Webcam proctoring
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ installed
-- MongoDB database (local or cloud)
+- Node.js 18 or higher
+- MongoDB Atlas account or local MongoDB instance
 - npm or yarn package manager
 
 ### Installation
